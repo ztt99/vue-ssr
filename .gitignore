@@ -17,3 +17,12 @@ packages/vue-server-renderer/server-plugin.js
 packages/vue-server-renderer/client-plugin.js
 packages/vue-template-compiler/build.js
 .vscode
+
+
+
++ css-loader@5.0.1
++ vue-style-loader@4.1.2
++ vue-loader@15.9.6
++ webpack-cli@3.3.12
++ webpack@5.15.0
++ webpack-dev-server@3.11.2

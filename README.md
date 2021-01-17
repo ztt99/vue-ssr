@@ -4,3 +4,6 @@
 ```html
 <!-- vue-ssr-outlet -->   //这个有空格报错了
 ```
+2. concurrently
+
+cli命令同步进行
