@@ -3,6 +3,7 @@ const merge = require('webpack-merge').default
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const base = require('./webpack.base')
+const VueSsrServerPlugin = require('vue-server-renderer/server-plugin')
 
 const resolve = (dir)=>{
     return path.resolve(__dirname,dir)
@@ -17,6 +18,7 @@ module.exports = merge(base,{
         libraryTarget:'commonjs2' //指定的到处方式
     },
     plugins:[
+        new VueSsrServerPlugin(),
         new HtmlWebpackPlugin({
             template:resolve('../public/index.ssr.html'),
             filename:'index.ssr.html',
