@@ -18,7 +18,10 @@ const render = VueServerRenderer.createBundleRenderer(serverBundle,{
 })
 
 router.get('/', async (tex) => {
-    tex.body = await render.renderToString()
+    tex.body = await render.renderToString({url:tex.url})
+})
+router.get('/bar', async (tex) => {
+    tex.body = await render.renderToString({url:tex.url})
 })
 app.use(router.routes())
 app.use(static(path.resolve(__dirname,'dist')))  //静态服务插件

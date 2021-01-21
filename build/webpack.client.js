@@ -7,7 +7,7 @@ const VueSsrClientPlugin = require('vue-server-renderer/client-plugin')
 const resolve = (dir)=>{
     return path.resolve(__dirname,dir)
 }
-
+console.log(resolve('../src/client-entry.js'));
 module.exports = merge(base,{
     entry:{
         client:resolve('../src/client-entry.js')

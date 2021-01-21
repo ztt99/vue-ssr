@@ -20,7 +20,7 @@ module.exports = {
             },
             {
                 test:/\.css/,
-                use:['vue-style-loader','css-loader']
+                use:['vue-style-loader','css-loader']  //vue-style-loader 如果出不来，就降一下版本
             },
             {
                 test:/\.js/,
