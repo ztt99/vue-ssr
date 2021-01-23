@@ -10,13 +10,17 @@ export default ()=>{
         mode:'history',
         routes:[
             {
+                path:'/',
+                redirect:'/foo'
+            },
+            {
                 path:'/foo',
                 component:()=>import('./components/Foo.vue')
             },
-            {
-                path:'/bar',
-                component:()=>import('./components/Bar.vue')
-            }
+            // {
+            //     path:'/bar',
+            //     component:()=>import('./components/Bar.vue')
+            // }
         ]
     })
     return router
